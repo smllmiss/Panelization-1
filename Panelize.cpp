@@ -368,7 +368,7 @@ private:
 
 	void convertBGR2HSV(Image &newImage) {
 		Mat new_image;
-		cvtColor(image, new_image, CV_BGR2HSV);//COLOR_BGR2HSV);
+		cvtColor(image, new_image, COLOR_BGR2HSV);
 		newImage.setImage(new_image);
 	}
 	
