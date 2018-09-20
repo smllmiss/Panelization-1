@@ -1,10 +1,9 @@
 version: 3.0.{build}
 clone_depth: 1
 build_script:
-  - make
   - msbuild "Panelize.cpp" /verbosity:minimal /property:Configuration=%BUILD_TYPE% /logger:"C:\Program Files\AppVeyor\BuildAgent\Appveyor.MSBuildLogger.dll"
 artifacts:
-  - path: solvespace.exe
+  - path: panelize.exe
     name: panelize.exe
 deploy:
   - provider: GitHub
