@@ -46,4 +46,4 @@ install:
 script:
   - cmake .
   - make
-  - ./Panelize
+  - ./Panelize Sample.png
